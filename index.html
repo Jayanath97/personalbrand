@@ -354,6 +354,66 @@
                 padding: 25px;
             }
         }
+
+            .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+        max-width: 1050px;
+        margin: auto;
+    }
+
+    .skills-table {
+        background: rgba(255, 255, 255, 0.58);
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 15px 40px rgba(15, 23, 42, 0.10);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skills-table:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.14);
+    }
+
+    .skills-table h3 {
+        text-align: center;
+        font-size: 22px;
+        color: #0f172a;
+        margin-bottom: 22px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.10);
+    }
+
+    .skills-list {
+        display: grid;
+        gap: 12px;
+    }
+
+    .skill-item {
+        padding: 13px 16px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        color: #1e293b;
+        font-weight: 600;
+        font-size: 15px;
+        transition: all 0.25s ease;
+    }
+
+    .skill-item:hover {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateX(4px);
+    }
+
+    @media (max-width: 700px) {
+        .skills-grid {
+            grid-template-columns: 1fr;
+        }
+    }
     </style>
 </head>
 
@@ -568,31 +628,64 @@
 
     <!-- SKILLS -->
 
-    <section id="skills">
+<section id="skills">
 
-        <div class="section-title">
-            <h2>Skills & Technologies</h2>
-            <p>Technologies I use, develop with and continue to learn.</p>
+    <div class="section-title">
+        <h2>Skills & Expertise</h2>
+        <p>Business knowledge combined with technology and data-driven problem solving.</p>
+    </div>
+
+    <div class="skills-grid">
+
+        <!-- BUSINESS SKILLS -->
+
+        <div class="skills-table">
+
+            <h3>💼 Business</h3>
+
+            <div class="skills-list">
+
+                <div class="skill-item">IFRS 17 · Specialized</div>
+                <div class="skill-item">Finance</div>
+                <div class="skill-item">Accounting</div>
+                <div class="skill-item">Financial Reporting</div>
+                <div class="skill-item">Auditing</div>
+                <div class="skill-item">Sustainability</div>
+
+            </div>
+
         </div>
 
-        <div class="skills-container">
 
-            <div class="skill">Python</div>
-            <div class="skill">R</div>
-            <div class="skill">Pandas/Streamlit/Openpyxl</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Advanced Excel & VBA</div>
-            <div class="skill">C++</div>
-            <div class="skill">Qlik Sense</div>
-            <div class="skill">Power BI</div>
-            <div class="skill">GitHub</div>
-            <div class="skill">HTML & CSS</div>
+        <!-- TECHNOLOGY SKILLS -->
 
+        <div class="skills-table">
 
+            <h3>💻 Technology</h3>
+
+            <div class="skills-list">
+
+                <div class="skill-item">Data Analytics</div>
+                <div class="skill-item">Data Science</div>
+                <div class="skill-item">Automation</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">R</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Advanced Excel & VBA</div>
+                <div class="skill-item">Pandas · Streamlit · OpenPyXL</div>
+                <div class="skill-item">Qlik Sense</div>
+                <div class="skill-item">Power BI</div>
+                <div class="skill-item">GitHub</div>
+                <div class="skill-item">HTML & CSS</div>
+
+            </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- VISION -->
@@ -606,9 +699,7 @@
         <div class="vision-box glass">
 
             <p>
-                My goal is to bridge Finance and Technology while
-                transforming traditional accounting systems into
-                intelligent, scalable and data driven ecosystems.
+My goal is to bridge business and technology by transforming financial and business processes into intelligent, automated, scalable and data-driven solutions.
             </p>
 
         </div>
